@@ -7,5 +7,5 @@ const rec = SR.recognition();
 SR.start("start");
 
 SR.result((text) => {
-  console.log(text);
+  logDiv.innerHTML = text;
 });
