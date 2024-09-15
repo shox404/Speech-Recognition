@@ -7,5 +7,9 @@ const rec = SR.recognition();
 SR.start("start");
 
 SR.result((text) => {
-  logDiv.innerHTML = text;
+  greet(text);
+  bgColor(text);
+  textColor(text);
+  textSize(text);
+  opener(text);
 });
